@@ -1,0 +1,12 @@
+<h2>Search Cuisines</h2>
+<form action="/cuisines" method="GET">
+  <label>Name</label>
+  <input type="text" name="name" value="<% results.name %>" />
+  <button type="submit">Search</button>
+</form>
+<br />
+<% cuisines.forEach(cuisine => { %>
+
+<div><%= cuisine.name %></div>
+
+<% }) %>
